@@ -3,10 +3,10 @@ from scipy.sparse import csr_matrix
 from scipy.sparse.csgraph import breadth_first_order
 
 
-X = csr_matrix([[0, 8, 0, 3],
-                [0, 0, 2, 5],
-                [0, 0, 0, 0],
-                [0, 0, 6, 0]])
+x = np.array([[0, 8, 0, 3],
+               [0, 0, 2, 5],
+               [0, 0, 0, 0],
+               [0, 0, 6, 0]])
 
 
 def path(arr, s, t):
@@ -16,16 +16,18 @@ def path(arr, s, t):
     :param t: Sink
     :return: Shortest length path from source to sink
     """
+    source_vertex = s
     temp = [t]
     i = t
     while arr[i] != -9999:
-        temp.append (arr[i])
+        temp.append(arr[i])
         i = arr[i]
     return temp[::-1]
 
 
 def find_bottleneck(G, arr):
     """
+    :param G: Input Graph
     :param arr: Shortest path array
     :return: capacity of bottleneck edge
     """
@@ -37,18 +39,19 @@ def find_bottleneck(G, arr):
     return min_val
 
 
-def augment(G, short_path, bottleneck_edge):
+def augment(G1, short_path, bottleneck_edge):
     """
 
-    :param G: Residual Graph Gf
+    :param G1: Residual Graph Gf
     :param short_path:
     :param bottleneck_edge:
     :return: Augmented Residual graph Gf'
     """
     for i in range(1, len(short_path)):
-        if G[i - 1][i] > 0:
-            pass
-    return G
+        start, end = short_path[i - 1], short_path[i]
+        G1[start][end] -= bottleneck_edge
+        G1[end][start] += bottleneck_edge
+    return G1
 
 
 def edmonds_karp(G, s, t):
@@ -61,12 +64,18 @@ def edmonds_karp(G, s, t):
     flow = 0
     source, sink = s, t
 
-    nodes, predecessor = breadth_first_order(G, 0, directed=True, return_predecessors=True)
+    nodes, predecessor = breadth_first_order(csr_matrix(G), 0, directed=True, return_predecessors=True)
     shortest_path = path(predecessor, source, sink)
-    print shortest_path
+    # print shortest_path
 
     while len(shortest_path) > 1:
-        flow += find_bottleneck(G, shortest_path)
+        bottleneck_edge = find_bottleneck(G, shortest_path)
+        flow += bottleneck_edge
+        G = augment(G, shortest_path, bottleneck_edge)
+        nodes, predecessor = breadth_first_order(csr_matrix(G), 0, directed=True, return_predecessors=True)
+        shortest_path = path(predecessor, source, sink)
 
+    return flow
 
-edmonds_karp(X, 0, 2)
+max_flow = edmonds_karp(x, 0, 2)
+print max_flow
