@@ -1,3 +1,16 @@
+class Graph():
+    pass
+
+
+def breadth_first_search(g1, s, t):
+    q = [s]
+
+    while q:
+        p = q.pop(0)
+        for i in g[p]:
+            q.append(i)
+
+
 g = {}
 l = raw_input("Enter vertices V (space separated)").strip().split()
 for i in l:
@@ -7,7 +20,10 @@ for _ in xrange(input("Enter no. of edges E (start, end and weight):")):
     if start not in g:
         print "Unknown Vertex" + start + ": Edge" + start + end + "Not added"
     g[start][end] = weight
-print g
+# print g
+# breadth_first_search(g, 'a', 'b')
+
+
 
 """
 Input
@@ -24,3 +40,4 @@ d c 5
 b e 2
 e d -2
 """
+
