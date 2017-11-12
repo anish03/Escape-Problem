@@ -2,5 +2,6 @@
 
 ## Prerequisites
 
+`pip install numpy`
 
 
