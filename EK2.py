@@ -10,6 +10,7 @@ x = np.array([[0, 8, 0, 3],
 
 
 def path(arr, s, t):
+
     """
     :param arr: Array of predecessors
     :param s: Source
