@@ -1,4 +1,3 @@
-# CS255-Project
-## Implementation of Max Flow network
+# Implementation of Max Flow Network
 
 
