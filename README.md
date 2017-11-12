@@ -2,6 +2,9 @@
 
 ## Prerequisites
 
-`pip install numpy`
+```
+pip install numpy
+pip install scipy
+```
 
 
