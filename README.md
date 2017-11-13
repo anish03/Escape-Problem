@@ -16,6 +16,6 @@ pip install scipy
 
 # Authors
 
-Neeraj Kulkarni @xOmega
+Neeraj Kulkarni
 
-Anish Narkhede @anish03
+Anish Narkhede
