@@ -13,3 +13,9 @@ pip install numpy
 pip install scipy
 
 ```
+
+# Authors
+
+Neeraj Kulkarni @xOmega
+
+Anish Narkhede @anish03
