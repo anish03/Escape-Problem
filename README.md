@@ -1,4 +1,4 @@
-# Implementation of Max Flow Network
+# Max Flow through a Network 
 
 * Maximum flow through a network using Edmond Karp algorithm (using shortest path)
 
