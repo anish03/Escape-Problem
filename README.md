@@ -6,6 +6,8 @@
 
 * Maximum flow through a network using Ford-Fulkerson (Depth first search)
 
+* Implemented the Escape Problem using max-flow.
+
 ## Prerequisites
 
 ```
