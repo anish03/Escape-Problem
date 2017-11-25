@@ -4,11 +4,6 @@ import numpy as np
 from scipy.sparse import csr_matrix
 from scipy.sparse.csgraph import breadth_first_order
 
-x = np.array([[0, 8, 0, 3, ],
-               [0, 0, 2, 5],
-               [0, 0, 0, 0],
-               [0, 0, 6, 0]])
-
 
 def path(arr, s, t):
     """
