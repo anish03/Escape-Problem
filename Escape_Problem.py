@@ -4,7 +4,6 @@ import numpy as np
 from scipy.sparse import csr_matrix
 from scipy.sparse.csgraph import breadth_first_order
 
-
 def path(arr, s, t):
     """
     :param arr: Array of predecessors
@@ -124,10 +123,10 @@ def escape(d, st):
 
     return max_flow
 
-
-grid_dimension = 6
+grid_dimension = 50
 start_vertices = [(3, 1), (2, 2), (3, 2), (4, 2), (2, 4), (3, 4), (4, 4), (5, 3), (6, 2), (6, 3), (6, 4), (3, 5)]
-# start_vertices = [(2, 2), (3, 3)]
+#start_vertices = d[1]
 final_flow = escape(grid_dimension, start_vertices)
 print final_flow
 print "Escape Successful" if final_flow == len(start_vertices) else "Escape failed"
+

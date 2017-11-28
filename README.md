@@ -1,10 +1,11 @@
-# Max Flow through a Network 
+# Escape Problem
 
-* Maximum flow through a network using Edmond Karp algorithm (using shortest path)
 
-* Maximum flow through a network using Capacity Scaling
+* Implemented maximum flow through a network using Edmond Karp algorithm (using shortest path)
 
-* Maximum flow through a network using Ford-Fulkerson (Depth first search)
+* Implemented maximum flow through a network using Capacity Scaling
+
+* Implemented maximum flow through a network using Ford-Fulkerson (Depth first search)
 
 * Implemented the Escape Problem using max-flow.
 
