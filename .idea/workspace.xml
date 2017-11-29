@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b7d557c-34c9-4f92-b7f0-f07853830d8a" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/EK2.py" afterPath="$PROJECT_DIR$/Edmond_Karp.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MaxFlow_CapScale.py" afterPath="$PROJECT_DIR$/MaxFlow_CapacityScaling.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
