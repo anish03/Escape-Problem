@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b7d557c-34c9-4f92-b7f0-f07853830d8a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/graph.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/EK2.py" afterPath="$PROJECT_DIR$/Edmond_Karp.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MaxFlow_CapScale.py" afterPath="$PROJECT_DIR$/MaxFlow_CapacityScaling.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EK2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EK2.py">
+      <file leaf-file-name="Edmond_Karp.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Edmond_Karp.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="600">
-              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -25,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MaxFlow_CapScale.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MaxFlow_CapScale.py">
+      <file leaf-file-name="MaxFlow_CapacityScaling.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MaxFlow_CapacityScaling.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
-              <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+              <caret line="27" column="21" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -37,7 +38,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Escape_Problem.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Escape_Problem.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Escape_Problem.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="286">
@@ -158,7 +159,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="CS255_Project" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EK2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Edmond_Karp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -192,7 +193,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="CS255_Project" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MaxFlow_CapScale.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MaxFlow_CapacityScaling.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -306,7 +307,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EK2.py">
+    <entry file="file://$PROJECT_DIR$/Edmond_Karp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="31" column="35" lean-forward="false" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
@@ -316,7 +317,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MaxFlow_CapScale.py">
+    <entry file="file://$PROJECT_DIR$/MaxFlow_CapacityScaling.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -344,7 +345,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EK2.py">
+    <entry file="file://$PROJECT_DIR$/Edmond_Karp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="31" column="35" lean-forward="false" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
@@ -354,7 +355,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MaxFlow_CapScale.py">
+    <entry file="file://$PROJECT_DIR$/MaxFlow_CapacityScaling.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -364,7 +365,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EK2.py">
+    <entry file="file://$PROJECT_DIR$/Edmond_Karp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="31" column="35" lean-forward="false" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
@@ -374,7 +375,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MaxFlow_CapScale.py">
+    <entry file="file://$PROJECT_DIR$/MaxFlow_CapacityScaling.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -384,7 +385,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EK2.py">
+    <entry file="file://$PROJECT_DIR$/Edmond_Karp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="31" column="35" lean-forward="false" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
@@ -394,7 +395,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MaxFlow_CapScale.py">
+    <entry file="file://$PROJECT_DIR$/MaxFlow_CapacityScaling.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -405,7 +406,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/capacity_scaling.py" />
-    <entry file="file://$PROJECT_DIR$/EK2.py">
+    <entry file="file://$PROJECT_DIR$/Edmond_Karp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
@@ -422,7 +423,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EK2.py">
+    <entry file="file://$PROJECT_DIR$/Edmond_Karp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="35" column="24" lean-forward="false" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
@@ -547,20 +548,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EK2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MaxFlow_CapScale.py">
+    <entry file="file://$PROJECT_DIR$/MaxFlow_CapacityScaling.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
-          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+          <caret line="27" column="21" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -668,6 +659,16 @@
         <state relative-caret-position="286">
           <caret line="113" column="0" lean-forward="true" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Edmond_Karp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
