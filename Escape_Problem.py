@@ -4,6 +4,7 @@ import numpy as np
 from scipy.sparse import csr_matrix
 from scipy.sparse.csgraph import breadth_first_order
 
+
 def path(arr, s, t):
     """
     :param arr: Array of predecessors
@@ -76,24 +77,26 @@ def edmonds_karp(G, s, t):
 def escape(d, st):
     # Total number of nodes = d * d * 2 + 2
     g = d * d * 2 + 2
-    x1 = [[0] * g for _ in range(g)]
+    x1 = np.zeros((g, g), dtype=np.int)
 
-    # in-out edges changed to 1 (1->2, 3->4)
-    for k in range(1, d * d * 2, 2):
-        x1[k][k + 1] = 1
+    # Vin-Vout edges changed to 1
+    for j in range(1, d * d * 2, 2):
+        x1[j][j + 1] = 1
 
-    # Sides to Sink Upper + Lower
-    # x1[2 * (j - 1) * d + 2 * j][g] = 1
+    # Sides to Sink
+    # Upper + Lower
     for j in range(1, d + 1):
         x1[2 * j][g - 1] = 1
         x1[2 * (d - 1) * d + 2 * j][g - 1] = 1
 
-    # Sides to Sink left + right
+    # Sides to Sink
+    # left + right
     for j in range(d):
         x1[j * 2 * d + 2][g - 1] = 1
         x1[2 * d * (j + 1)][g - 1] = 1
 
-    # Source to given vertices, S to Vin
+    # Source to given vertices,
+    # S to Vin
     for l in st:
         x1[0][(l[0] - 1) * 2 * d + (2 * (l[1] - 1)) + 1] = 1
 
@@ -123,10 +126,17 @@ def escape(d, st):
 
     return max_flow
 
-grid_dimension = 50
-start_vertices = [(3, 1), (2, 2), (3, 2), (4, 2), (2, 4), (3, 4), (4, 4), (5, 3), (6, 2), (6, 3), (6, 4), (3, 5)]
-#start_vertices = d[1]
-final_flow = escape(grid_dimension, start_vertices)
-print final_flow
-print "Escape Successful" if final_flow == len(start_vertices) else "Escape failed"
-
+if __name__ == '__main__':
+    g1, g2, t = map(int, raw_input().strip().split())
+    grid_dimension = g1
+    if g1 != g2:
+        print "Invalid Grid dimensions: Not a square grid"
+    else:
+        start_vertices = []
+        for k in xrange(t):
+            x, y = map(int, raw_input().strip().split())
+            start_vertices.append((x, y))
+        final_flow = escape(grid_dimension, start_vertices)
+        print "Maximum Flow: ", final_flow
+        print "Starting Escape vertices: ", t
+        print "possible" if final_flow == len(start_vertices) else "not possible"
