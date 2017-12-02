@@ -1,5 +1,6 @@
 # Escape problem
 
+import os
 import numpy as np
 from scipy.sparse import csr_matrix
 from scipy.sparse.csgraph import breadth_first_order
@@ -127,16 +128,24 @@ def escape(d, st):
     return max_flow
 
 if __name__ == '__main__':
-    g1, g2, t = map(int, raw_input().strip().split())
+    l = []
+    file_path = os.path.join(os.curdir, r"Datasets\ds9.txt")
+    with open(file_path) as f:
+        for line in f:
+            l.append((map(int, line.strip().split())))
+
+    g1, g2, tc = l[0]
     grid_dimension = g1
     if g1 != g2:
         print "Invalid Grid dimensions: Not a square grid"
     else:
         start_vertices = []
-        for k in xrange(t):
-            x, y = map(int, raw_input().strip().split())
+        for k in xrange(tc):
+            x, y = l[k + 1]
             start_vertices.append((x, y))
+        # print start_vertices
+
         final_flow = escape(grid_dimension, start_vertices)
         print "Maximum Flow: ", final_flow
-        print "Starting Escape vertices: ", t
+        print "Starting Escape vertices: ", tc
         print "possible" if final_flow == len(start_vertices) else "not possible"
