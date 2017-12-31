@@ -1,6 +1,8 @@
 # Escape Problem
 
-![Escape Problem](https://github.com/anish03/CS255-Project/blob/master/Escape%20Problem/Escape%20Problem1.png)
+![Escape Problem1](https://github.com/anish03/CS255-Project/blob/master/Escape%20Problem/Escape%20Problem1.png)
+![Escape Problem2](https://github.com/anish03/CS255-Project/blob/master/Escape%20Problem/Escape%20Problem2.png)
+<br/>
 
 * Implemented maximum flow through a network using Edmond Karp algorithm (using shortest path)
 
