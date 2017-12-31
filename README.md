@@ -27,3 +27,7 @@ pip install scipy
 * Neeraj Kulkarni - [xOmega](https://github.com/xOmega)
 
 * Anish Narkhede - [anish03](https://github.com/anish03)
+
+## References
+
+* Introduction to Algorithms - CLRS (Chapter 26 Maximum Flow)
