@@ -22,7 +22,7 @@ pip install scipy
 
 ```
 
-## Authors
+## Contributors
 
 * Neeraj Kulkarni - [xOmega](https://github.com/xOmega)
 
